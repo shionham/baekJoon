@@ -1,0 +1,25 @@
+package BaekJoon;
+
+import java.util.Scanner;
+
+public class obeanTime {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int h = sc.nextInt();
+        int m = sc.nextInt();
+        int c = sc.nextInt();
+
+        int totalminute = m + c;
+        int addedhours = totalminute / 60;
+        int newminutes = totalminute % 60;
+
+        int newhour = (h + addedhours) % 24;
+
+        System.out.println(newhour + " " + newminutes);
+    }
+
+    }
+
+
+

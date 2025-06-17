@@ -1,0 +1,28 @@
+package BaekJoon;
+
+import java.util.Scanner;
+
+public class __04__ {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int x = sc.nextInt();
+        int a = sc.nextInt();
+        int a1 = sc.nextInt();
+        int b = sc.nextInt();
+        int b1 = sc.nextInt();
+        int c = sc.nextInt();
+        int c1 = sc.nextInt();
+        int d = sc.nextInt();
+        int d1 = sc.nextInt();
+
+
+        if (x == (a * a1) + (b * b1) + (c * c1) + (d * d1)) {
+            System.out.println("yes");
+        } else {
+            System.out.println("no");
+        }
+    }
+}
+
+

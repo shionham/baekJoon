@@ -1,0 +1,23 @@
+package BaekJoon;
+
+import java.io.*;
+
+public class __07__ {
+    public static void main(String[] args) throws IOException {
+        BufferedReader s = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter s1 = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int t = Integer.parseInt(s.readLine());
+
+        for (int i = 0; i < t; i++) {
+            String[] parts = s.readLine().split(" ");
+            int a = Integer.parseInt(parts[0]);
+            int b = Integer.parseInt(parts[1]);
+
+            s1.write((a + b) + "\n");
+        }
+        s1.flush();
+        s1.close();
+        s.close();
+    }
+}

@@ -1,0 +1,24 @@
+package BaekJoon;
+
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
+public class __03__ {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int max = Integer.MIN_VALUE;
+        int index = -1; // 위치 저장 (1부터 시작할 예정)
+
+        for (int i = 1; i <= 9; i++) {
+            int num = sc.nextInt();
+            if (num > max) {
+                max = num;
+                index = i;  // 몇 번째 수인지 저장
+            }
+        }
+        System.out.println(max);
+        System.out.println(index);
+        sc.close();
+    }
+}

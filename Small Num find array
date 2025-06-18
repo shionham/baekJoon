@@ -1,0 +1,22 @@
+package BaekJoon;
+
+import java.util.Scanner;
+
+public class __01__ {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt(); // n은 나열할 숫자들의 갯수
+        int X = sc.nextInt(); // x는 기준 숫자
+
+        // 수열 A 입력 및 처리
+        for (int i = 0; i < N; i++) {
+            int a = sc.nextInt();   // a는 나열될 숫자들
+            if (a < X) {
+                System.out.print(a + " ");
+            }
+        }
+
+        sc.close();
+    }
+}

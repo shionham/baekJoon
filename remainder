@@ -1,0 +1,19 @@
+package BaekJoon;
+
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class __08__ {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        HashSet<Integer> remainderset = new HashSet<>();
+
+        for (int i = 0; i < 10; i++) {
+            int num = sc.nextInt();
+            int remainder = num % 42;
+
+            remainderset.add(remainder);
+        }
+        System.out.println(remainderset.size());
+    }
+}

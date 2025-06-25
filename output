@@ -1,0 +1,12 @@
+package baekjoon;
+
+public class __05__ {
+    public static void main(String[] args) {
+
+        String s = "Hello";
+        String s1 = "Baekjoon";
+        String s2 = "ONline Judge";
+
+        System.out.println(s + "\n" + s1 + "\n" + s2);
+    }
+}

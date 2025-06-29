@@ -1,0 +1,18 @@
+package baekjoon;
+
+import java.util.Scanner;
+
+public class __05__ {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt(); // a : 낮에 올라가는 거리
+        int b = sc.nextInt(); // b : 밤에 내려오는 거리
+        int v = sc.nextInt(); // v : 막대 높이
+
+        int days = (int) Math.ceil((double)(v-a) / (a - b)) + 1;
+
+        System.out.println(days);
+
+    }
+}

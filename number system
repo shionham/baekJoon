@@ -1,0 +1,19 @@
+package baekjoon;
+
+import java.util.Scanner;
+
+public class __06__ {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String line = sc.nextLine();
+        String[] parts = line.split(" ");
+
+        String input = parts[0];
+        int base = Integer.parseInt(parts[1]);
+
+        long result = Long.parseLong(input,base);
+        System.out.println(result);
+
+    }
+}
